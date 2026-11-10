@@ -27,6 +27,7 @@ public class InitData implements CommandLineRunner {
                     new Product(null,"Laptop Gaming","ASUS",2024, LocalDate.of(2029, 12, 31),25990000.0),
                     new Product(null,"Laptop Gaming","ASUS",2024, LocalDate.of(2029, 12, 31),25990000.0)
             );
+            productRepository.saveAll(products);
         }
     }
 }
